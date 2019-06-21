@@ -28,7 +28,7 @@ export class HelloComponent  {
     console.log('call getPdf()');
     //return this.http.get('https://us-central1-element-services.cloudfunctions.net/pdf/paymentDocument');
 
-    return this.http.post('https://us-central1-element-services.cloudfunctions.net/pdf/paymentDocument', { hi: }, { responseType: 'blob' });
+    return this.http.post('https://us-central1-element-services.cloudfunctions.net/pdf/paymentDocument', {}, { responseType: 'blob' });
 
   }
 
