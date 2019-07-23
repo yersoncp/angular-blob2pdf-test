@@ -21,6 +21,7 @@ export class HelloComponent  {
       console.log(e);
       //var file = new Blob([e['blob']], {type: 'application/pdf'});
       this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(e));
+      console.log(this.fileUrl);
     })
   }
 
